@@ -1,9 +1,10 @@
-
-
 .card {
+    width: 210px;
+    padding: 7px;
     display: flex;
     align-items: center;
     margin: 10px 30px;
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 .imgFood {
