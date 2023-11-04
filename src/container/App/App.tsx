@@ -13,10 +13,10 @@ import './App.css'
 function App() {
   const [menu] = useState<Props[]>([
     {id: 1, name: 'Hamburger', price: 100, photo: Hamburger},
-    {id: 2, name: 'Chicken burger', price: 120, photo: ChickenBurger},
+    {id: 2, name: 'Fresh', price: 120, photo: Fresh},
     {id: 3, name: 'Pita Burger', price: 150, photo: PitaBurger},
     {id: 4, name: 'Coffee', price: 120, photo: Coffee},
-    {id: 5, name: 'Fresh', price: 150, photo: Fresh},
+    {id: 5, name: 'Chicken burgerCoffee', price: 150, photo: ChickenBurger},
     {id: 6, name: 'Tea', price: 50, photo: Tea},
   ]);
     const [items, setitems] = useState<{ [id: number]: number }>({});
