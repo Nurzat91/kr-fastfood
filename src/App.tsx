@@ -1,32 +1,37 @@
 import './App.css'
 import {useState} from 'react';
 import {Props} from './types';
+import Hamburger from './assets/hamburgers.jpg';
+import ChickenBurger from './assets/ChickenBurger.jpg';
+import PitaBurger from './assets/PitaBurger.png';
+import Coffee from './assets/Coffee.png';
+import Fresh from './assets/Fresh.png';
+import Tea from './assets/Tea.png';
+import AddItems from "./components/AddItems/AddItems";
+
 
 function App() {
   const [menu, setmenu] = useState<Props[]>([
-    {id: 1, name: 'Hamburger', price: 100},
-    {id: 2, name: 'Chicken burger', price: 120},
-    {id: 1, name: 'Pita Burger', price: 150},
-    {id: 1, name: 'Coffee', price: 120},
-    {id: 1, name: 'Fresh', price: 150},
-    {id: 1, name: 'Tea', price: 50},
+    {id: 1, name: 'Hamburger', price: 100, photo: Hamburger},
+    {id: 2, name: 'Chicken burger', price: 120, photo: ChickenBurger},
+    {id: 3, name: 'Pita Burger', price: 150, photo: PitaBurger},
+    {id: 4, name: 'Coffee', price: 120, photo: Coffee},
+    {id: 5, name: 'Fresh', price: 150, photo: Fresh},
+    {id: 6, name: 'Tea', price: 50, photo: Tea},
   ]);
+
+
 
   return (
     <>
-      <div>Order Details:
-
+      <div className="OrderDetails">
+        <h3>Order Details:</h3>
       </div>
-      <div>Add items:
-          {menu.map(item =>(
-              <div key={item.id} className="card">
-                <img/>
-                <div>
-                    <p>{item.name}</p>
-                    <p>Price: {item.price} KGS</p>
-                </div>
-              </div>
-          ))}
+      <div className="AddItems">
+          <h3>Add items:</h3>
+          <AddItems
+              menu={menu}
+          />
       </div>
     </>
   )

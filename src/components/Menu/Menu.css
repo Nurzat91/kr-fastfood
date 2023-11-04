@@ -1,0 +1,28 @@
+
+
+.card {
+    display: flex;
+    align-items: center;
+    margin: 10px 30px;
+}
+
+.imgFood {
+    width: 70px;
+    margin-right: 15px;
+}
+
+.cardBody {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+p {
+    margin: 0;
+}
+
+.menuItems {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
