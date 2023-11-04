@@ -55,18 +55,19 @@ function App() {
   return (
     <>
       <div className="OrderDetails">
-          <OrderDetails
-              items={items}
-              onDelete={onDelete}
-              menu={menu}
-              getTotalPrice={getTotalPrice()}/>
+        <OrderDetails
+          items={items}
+          onDelete={onDelete}
+          menu={menu}
+          getTotalPrice={getTotalPrice()}
+        />
       </div>
       <div className="AddItems">
-          <h3>Add items:</h3>
-          <AddItems
-            menu={menu}
-            addChoose={addChoose}
-          />
+        <h3>Add items:</h3>
+        <AddItems
+          menu={menu}
+          addChoose={addChoose}
+        />
       </div>
     </>
   )
